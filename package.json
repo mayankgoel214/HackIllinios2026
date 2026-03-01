@@ -1,0 +1,14 @@
+{
+  "name": "fieldsense",
+  "version": "1.0.0",
+  "description": "AI-Powered Field Inspection Assistant",
+  "scripts": {
+    "dev:server": "cd server && node --watch index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
